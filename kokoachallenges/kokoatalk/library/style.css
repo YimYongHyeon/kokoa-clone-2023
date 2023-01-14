@@ -1,0 +1,251 @@
+@import "reset.css";
+
+:root {
+  --main-color: yellow;
+  --point-color: black;
+}
+
+body {
+  background-color: black;
+  margin: 80px;
+}
+
+.box__outside {
+  height: 1100px;
+  width: 500px;
+  background-color: white;
+  position: relative;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 500px;
+  background-color: var(--main-color);
+}
+
+.header-content span {
+  font-size: 30px;
+}
+
+.header-content {
+  width: 450px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search {
+  position: absolute;
+  top: 120px;
+  left: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  width: 470px;
+  background-color: white;
+  border-radius: 40px;
+  box-shadow: 0 4px black;
+}
+
+.search input {
+  margin-left: 30px;
+  border: white;
+  font-size: 20px;
+}
+
+.search input::placeholder {
+  color: gray;
+}
+
+.search i {
+  margin-right: 20px;
+}
+
+.title {
+  font-size: 35px;
+  color: black;
+  margin: 20px 0px;
+}
+.middle {
+  font-size: 30px;
+  color: var(--point-color);
+}
+.words {
+  font-size: 20px;
+  color: rgb(168, 168, 168);
+}
+
+.tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #ececec;
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  height: 850px;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+  margin-top: 70px;
+}
+
+.container__book-of-the-day {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__bd-content {
+  display: flex;
+}
+
+.container__bd-content img {
+  height: 230px;
+  border-radius: 20px;
+}
+
+.bd-informations {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 270px;
+  margin-left: 20px;
+}
+
+.container__tag {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.container__btn {
+  display: flex;
+  width: 240px;
+  justify-content: space-between;
+}
+
+.btn__bookmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+}
+
+.btn__book {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+}
+
+.container__top-adventures {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__ta-content {
+  display: flex;
+  justify-content: flex-start;
+  overflow-x: scroll;
+}
+
+.container__ta-content::-webkit-scrollbar-track {
+  background-color: var(--main-color);
+  border-radius: 10px;
+  box-shadow: inset 0px 0px 5px red;
+}
+
+.book {
+  width: 100px;
+  margin-right: 20px;
+}
+
+.book img {
+  width: 100px;
+  height: 160px;
+  border-radius: 10px;
+}
+
+.container__popular-authors {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__pa-content {
+  display: flex;
+}
+
+.container__pa-content img {
+  width: 150px;
+  border-radius: 10px;
+}
+
+.pa-informations {
+  margin: 20px;
+}
+
+.star-rating {
+  unicode-bidi: bidi-override;
+  direction: rtl;
+
+  display: flex;
+
+  justify-content: flex-end;
+}
+.star-rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.7em;
+  font-size: 30px;
+}
+.star-rating > span:hover:before,
+.star-rating > span:hover ~ span:before {
+  content: "\2605";
+  position: absolute;
+  color: var(--point-color);
+}
+
+.unable_star-rating {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+.unable_star-rating span:nth-child(1) {
+  color: var(--point-color);
+}
+.unable_star-rating span:nth-child(2) {
+  color: var(--point-color);
+}
+.unable_star-rating span:nth-child(3) {
+  color: var(—point-color);
+}
+.unable_star-rating span:nth-child(4) {
+  color: var(—point-color);
+}
+
+.unable_star-rating > span {
+  display: inline-block;
+  position: relative;
+  width: 0.7em;
+  font-size: 30px;
+}
